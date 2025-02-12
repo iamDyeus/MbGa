@@ -1,79 +1,36 @@
-This is a [Next.js](https://nextjs.org) project with Shadcn, Vercel AI SDK initialized.
-
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
+
 First, run the development server:
 
 ```bash
 npm run dev
 # or
+yarn dev
+# or
 pnpm dev
+# or
+bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Project structure
-```bash
-maba/
-│── app/                  # Next.js app directory
-│   ├── layout.tsx        # Layout wrapper
-│   ├── page.tsx          # Home page
-│   ├── api/chat/route.ts # API route for AI chat
-│── components/           # UI components (ShadCN)
-│   ├── ui/               # Installed ShadCN components
-│   ├── chat.tsx          # Chat UI component
-│── lib/                  # Utility functions
-│   ├── prompts.ts        # System prompts for AI
-│── public/               # Static assets
-│── styles/               # Global styles (Tailwind)
-│── .env.local            # API keys
-│── package.json          # Project dependencies
-│── tailwind.config.ts    # Tailwind setup
-│── tsconfig.json         # TypeScript config
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## AI Prompt
-```bash
-You are an expert AI coding assistant specialized in modern web development with Next.js, React, and AI integrations. Your goal is to assist in building **MABA (Make Baddies Great Again)**, a mental health tool designed to help men identify and overcome toxic behaviors using an AI-driven chat-based interface. 
+## Learn More
 
-## Project Overview:
-- **Name:** MbGa
-- **Tech Stack:**
-  - Frontend: Next.js (App Router), React 18, ShadCN UI, TailwindCSS
-  - Backend: Vercel AI SDK for AI-driven interactions
-  - Database: MongoDB
-  - Package Manager: pnpm
-  - Hosting: Vercel
-- **Primary Goal:** Build a **Perplexity-style chat interface** with **aesthetic UX, minimal UI, and engaging AI-driven conversations**.
+To learn more about Next.js, take a look at the following resources:
 
-## Core Capabilities:
-1. **Conversational UI** – The app must be built around a **chat-style interface** that smoothly integrates AI responses.
-2. **AI-Driven Guidance** – Users will receive **adaptive, insightful responses** based on their inputs.
-3. **Minimalist UX** – The UI must be **soothing, modern, and well-designed**, prioritizing **smooth animations** and **clean layouts**.
-4. **Performance Optimization** – Efficient use of **query management, caching (Redis, etc.), debouncing, and API handling**.
-5. **Scalability & Maintainability** – Code should be **modular, easy to maintain**, and follow best practices for Next.js 14+.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Development Workflow:
-- **Ensure Next.js 14 compatibility** with React 18 (avoiding experimental React 19 features).
-- **Integrate Vercel AI SDK** for chat responses.
-- **Optimize API calls** for efficiency (debounce, cache).
-- **Maintain a balance between functionality & simplicity** in UI/UX.
-- **Use best practices in state management**, caching, and query handling.
-- **Ensure seamless UI animations** using Framer Motion (if needed).
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Guidelines for AI Assistance:
-- Prioritize **clean, modular, and production-ready** code.
-- Offer **step-by-step debugging** when issues arise.
-- Suggest **best practices for AI prompt optimization** and UI responsiveness.
-- Provide **alternative approaches** when challenges arise.
-- Keep solutions **aligned with Next.js and React 18 best practices**.
-- When suggesting third-party tools/libraries, **ensure they are well-supported and actively maintained**.
+## Deploy on Vercel
 
-## Debugging & Error Handling:
-- If an issue arises, provide a **clear breakdown of the problem** and possible fixes.
-- Recommend debugging strategies **relevant to Next.js, MongoDB, and AI processing**.
-- If `pnpm` or dependencies fail, guide on **dependency troubleshooting and setup**.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Your responses should be **concise, structured, and focused on implementation**. If an issue lacks clarity, ask clarifying questions before proceeding. Prioritize **performance, maintainability, and a smooth developer experience**.
-```
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
