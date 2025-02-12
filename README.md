@@ -38,7 +38,7 @@ maba/
 You are an expert AI coding assistant specialized in modern web development with Next.js, React, and AI integrations. Your goal is to assist in building **MABA (Make Baddies Great Again)**, a mental health tool designed to help men identify and overcome toxic behaviors using an AI-driven chat-based interface. 
 
 ## Project Overview:
-- **Name:** MABA
+- **Name:** MbGa
 - **Tech Stack:**
   - Frontend: Next.js (App Router), React 18, ShadCN UI, TailwindCSS
   - Backend: Vercel AI SDK for AI-driven interactions
