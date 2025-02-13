@@ -12,15 +12,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
 import { Button } from "@/components/ui/button"
 import {
   Select,
   SelectContent,
-  SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
@@ -29,6 +25,7 @@ export default function ChatApp() {
   const [message, setMessage] = useState("")
   const examplePrompts = [
     { main: "Help me book a flight", sub: "from San Francisco to London" },
+    { main: "What is the status", sub: "of flight BA142 flying tmrw?" },
     { main: "What is the status", sub: "of flight BA142 flying tmrw?" }
   ];
   
@@ -48,7 +45,7 @@ export default function ChatApp() {
       <main className="max-w-3xl mx-auto p-4 space-y-8">
         {/* System Message */}
         <div className="relative bg-zinc-900 rounded-2xl p-6 shadow-lg">
-          <div className="absolute -top-3 right-6 flex gap-2">
+          <div className="flex gap-2 items-center justify-center">
             <button className="p-1 bg-zinc-800 rounded">▲</button>
             <button className="p-1 bg-zinc-800 rounded">
               <MessageSquare className="w-4 h-4" />
@@ -106,7 +103,7 @@ export default function ChatApp() {
                   <DialogHeader>
                     <DialogTitle>Select Mode</DialogTitle>
                     <DialogDescription>
-                      Make changes to your profile here. Click save when you're done.
+                      Select a mode, which will help the AI make you feel better.
                     </DialogDescription>
                   </DialogHeader>
                   <div className="grid gap-4 py-4">
@@ -114,7 +111,7 @@ export default function ChatApp() {
                     <Select >
                       {/* <FormControl> */}
                         <SelectTrigger>
-                          <SelectValue placeholder="Select a verified email to display" />
+                          <SelectValue placeholder="Select a Mode of AI" />
                         </SelectTrigger>
                       {/* </FormControl> */}
                       <SelectContent>
