@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <HeroGeometric badge="iamDyeus/MbGa" title1="Make Baddies'" title2="Great Again" />
+      <HeroGeometric badge="iamDyeus/MbGa" title1="Make Baddies'" title2="Great Again" title3="Guiding Bros to Greatness, One Chat at a Time."/>
     </>
   );
 }
