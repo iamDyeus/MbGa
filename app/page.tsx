@@ -1,6 +1,5 @@
 import { ThemeToggle } from "@/components/theme-toggle";
-import HeroGeometric from "@/components/ui/hero-geometric";
-import Image from "next/image";
+import HeroGeometric from "@/components/hero-geometric";
 
 export default function Home() {
   return (

@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 import { Pacifico } from "next/font/google"
 import { cn } from "@/lib/utils"
 import { Github } from "lucide-react"
+import Image from "next/image"
+import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button"
 
 const pacifico = Pacifico({
   subsets: ["latin"],
@@ -110,6 +112,38 @@ export default function HeroGeometric({
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/[0.05] via-transparent to-rose-500/[0.05] blur-3xl" />
 
       <div className="absolute inset-0 overflow-hidden">
+        
+        {/* Funny Images */}
+        <Image
+          src={'/donald-duck.svg'}
+          height={600}
+          width={400}
+          alt="Mr. Donald Duck"
+          className="hidden md:block absolute bottom-0 left-0"
+        />
+        <Image
+          src={'/p-biddy.svg'}
+          height={600}
+          width={400}
+          alt="Mr. Donald Duck"
+          className="hidden md:block absolute bottom-0 right-0"
+        />
+        <Image
+          src={'/donald-duck.svg'}
+          height={210}
+          width={210}
+          alt="Mr. Donald Duck"
+          className="block md:hidden absolute bottom-0 left-0 z-1"
+        />
+        <Image
+          src={'/p-biddy.svg'}
+          height={210}
+          width={210}
+          alt="Mr. Donald Duck"
+          className="block md:hidden absolute bottom-0 right-0 z-1 "
+        />
+        
+        {/* The 3D Shapes */}
         <ElegantShape
           delay={0.3}
           width={600}
@@ -156,6 +190,8 @@ export default function HeroGeometric({
         />
       </div>
 
+      
+
       <div className="relative z-10 container mx-auto px-4 md:px-6">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
@@ -190,6 +226,7 @@ export default function HeroGeometric({
               {title3}
             </p>
           </motion.div>
+          <InteractiveHoverButton text="Talk with Bro" className="mx-auto"/>
         </div>
       </div>
 
